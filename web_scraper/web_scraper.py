@@ -22,7 +22,7 @@ def get_citations_needed_count():
     citation_needed = []
     for item in soup.find_all(title="Wikipedia:Citation needed"):
         citation_needed.append(item)
-    return len(citation_needed)
+    return citation_needed
 print(get_citations_needed_count())
 
 # get_citations_needed_report takes in a url and returns a string
